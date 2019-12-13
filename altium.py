@@ -9,7 +9,7 @@ from io import BytesIO
 from math import atan2, sin, cos, radians, degrees, hypot
 
 try:
-    from OleFileIO_PL import OleFileIO
+    from olefile import OleFileIO
 except ImportError:
     # Pillow version tends to do illegal seeks with Altium files
     from PIL.OleFileIO import OleFileIO
